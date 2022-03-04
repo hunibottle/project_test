@@ -18,5 +18,13 @@
 	<classpathentry kind="lib" path="/Users/kimbyeounghoon/Downloads/ojdbc8-full/simplefan.jar"/>
 	<classpathentry kind="lib" path="/Users/kimbyeounghoon/Downloads/ojdbc8-full/ucp.jar"/>
 	<classpathentry kind="lib" path="/Users/kimbyeounghoon/Downloads/ojdbc8-full/xdb6.jar"/>
+	<classpathentry kind="lib" path="/pro17/WebContent/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/pro17/WebContent/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/pro17/WebContent/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/pro17/WebContent/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/Applications/development/apache-tomcat-9.0.58/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="/Applications/development/apache-tomcat-9.0.58/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="/Applications/development/apache-tomcat-9.0.58/lib/jaspic-api.jar"/>
+	<classpathentry kind="lib" path="/Applications/development/apache-tomcat-9.0.58/lib/jsp-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

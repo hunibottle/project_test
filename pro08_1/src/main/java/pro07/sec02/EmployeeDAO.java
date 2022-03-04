@@ -92,4 +92,44 @@ public class EmployeeDAO {
 		}
 	}
 	
+	public void modMember(EmployeeVO employeeVO) {
+		try {
+			conn=dataFactory.getConnection();
+			String id = employeeVO.getId();
+			String name = employeeVO.getName();
+			String email = employeeVO.getEmail();
+			String pwd = employeeVO.getPwd();
+			
+			String query = "update t_member set pwd=?, name=?, email=? where id=?";
+			System.out.println("prepareStatememt: " + query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, id);
+			pstmt.setString(2, pwd);
+			pstmt.setString(3, name);
+			pstmt.setString(4, email);
+			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	public void delMember(String id) {
+		try {
+			conn = dataFactory.getConnection();
+			String query = "delete from t_member" + " where id=?";
+			System.out.println("prepareStatememt:" + query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, id);
+			pstmt.executeUpdate();
+			pstmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			}//end try
+	}//end dell..
+	
 }
